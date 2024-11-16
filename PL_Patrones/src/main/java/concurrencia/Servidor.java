@@ -3,7 +3,7 @@ package concurrencia;
 import Iterator.Agregado;
 import Iterator.AgregadoVehiculos;
 import Iterator.Iterador;
-import log.Log;
+import Singleton.Log;
 
 import javax.swing.*;
 
@@ -28,7 +28,7 @@ public class Servidor extends javax.swing.JFrame {
         initComponents();
         int opcion = 0;
         //Creamos el log
-        this.archivoLog = new Log(true);
+        this.archivoLog = Log.getInstancia(); // Uso del patron singleton
         //Creamos el paso
         this.paso = new Paso();
         //Creamos el peaje

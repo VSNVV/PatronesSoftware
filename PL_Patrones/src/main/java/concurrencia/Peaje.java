@@ -1,6 +1,6 @@
 package concurrencia;
 
-import log.Log;
+import Singleton.Log;
 
 import javax.swing.*;
 import java.util.concurrent.locks.Condition;
