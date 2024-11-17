@@ -11,13 +11,12 @@ public class CabinaAutomatica extends Cabina{
     private boolean abierto = true;
     private ListaThreads listaVehiculo;
     private Lock cabinaAutomatica = new ReentrantLock();
-    private Log log;
+    private Log log = Log.getInstancia(); // Uso del patron Singleton
 
     //Métodos de la clase cabina
-    public CabinaAutomatica(String _nombre, JTextField jTextFieldVehiculo, Log _log) {
+    public CabinaAutomatica(String _nombre, JTextField jTextFieldVehiculo) {
         super(_nombre);
         this.listaVehiculo = new ListaThreads(jTextFieldVehiculo);
-        this.log = _log;
     }
     //Método para que un vehículo acceda a la cabina
     public void entraVehiculo(Vehiculo vehiculo){

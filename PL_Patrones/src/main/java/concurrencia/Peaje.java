@@ -19,7 +19,7 @@ public class Peaje{
     private Condition camionEspera = colaEspera.newCondition();
     private Condition ambulanciaEspera = colaEspera.newCondition();
     private ListaThreads listaEsperaPeaje;
-    private Log log;
+    private Log log = Log.getInstancia(); // Uso del patron Singleton
     private JTextField colaEsperaPeaje;
     private JTextField vehiculoCabinaCoche1, vehiculoCabinaCoche2, vehiculoCabinaCoche3, vehiculoCabinaCoche4, vehiculoCabinaCoche5, vehiculoCabinaCoche6, vehiculoCabinaCamion1, vehiculoCabinaCamion2, vehiculoCabinaCamion3, vehiculoCabinaCamion4;
     private JTextField empleadoCabinaCoche1, empleadoCabinaCoche2, empleadoCabinaCoche3, empleadoCabinaCamion1, empleadoCabinaCamion2;
@@ -35,19 +35,19 @@ public class Peaje{
                  JTextField vehiculoCabinaCoche6,
                  JTextField empleadoCabinaCamion1, JTextField vehiculoCabinaCamion1,
                  JTextField empleadoCabinaCamion2, JTextField vehiculoCabinaCamion2,
-                 JTextField vehiculoCabinaCamion3, JTextField vehiculoCabinaCamion4, Log log){
+                 JTextField vehiculoCabinaCamion3, JTextField vehiculoCabinaCamion4){
         //Creamos todas las cabinas
         this.listaEsperaPeaje = new ListaThreads(colaEntrada);
-        this.cabinaCoches1 = new CabinaManual("CabinaCohes1", empleadoCabinaCoche1, vehiculoCabinaCoche1, log);
-        this.cabinaCoches2 = new CabinaManual("CabinaCoches2", empleadoCabinaCoche2, vehiculoCabinaCoche2, log);
-        this.cabinaCoches3 = new CabinaManual("CabinaCoches3", empleadoCabinaCoche3, vehiculoCabinaCoche3, log);
-        this.cabinaCoches4 = new CabinaAutomatica("CabinaCoches4", vehiculoCabinaCoche4, log);
-        this.cabinaCoches5 = new CabinaAutomatica("CabinaCoches5", vehiculoCabinaCoche5, log);
-        this.cabinaCoches6 = new CabinaAutomatica("CabinaCoches6", vehiculoCabinaCoche6, log);
-        this.cabinaCamiones1 = new CabinaManual("CabinaCamiones1", empleadoCabinaCamion1, vehiculoCabinaCamion1, log);
-        this.cabinaCamiones2 = new CabinaManual("CabinaCamiones2", empleadoCabinaCamion2, vehiculoCabinaCamion2, log);
-        this.cabinaCamiones3 = new CabinaAutomatica("CabinaCamiones3", vehiculoCabinaCamion3, log);
-        this.cabinaCamiones4 = new CabinaAutomatica("CabinaCamiones4", vehiculoCabinaCamion4, log);
+        this.cabinaCoches1 = new CabinaManual("CabinaCohes1", empleadoCabinaCoche1, vehiculoCabinaCoche1);
+        this.cabinaCoches2 = new CabinaManual("CabinaCoches2", empleadoCabinaCoche2, vehiculoCabinaCoche2);
+        this.cabinaCoches3 = new CabinaManual("CabinaCoches3", empleadoCabinaCoche3, vehiculoCabinaCoche3);
+        this.cabinaCoches4 = new CabinaAutomatica("CabinaCoches4", vehiculoCabinaCoche4);
+        this.cabinaCoches5 = new CabinaAutomatica("CabinaCoches5", vehiculoCabinaCoche5);
+        this.cabinaCoches6 = new CabinaAutomatica("CabinaCoches6", vehiculoCabinaCoche6);
+        this.cabinaCamiones1 = new CabinaManual("CabinaCamiones1", empleadoCabinaCamion1, vehiculoCabinaCamion1);
+        this.cabinaCamiones2 = new CabinaManual("CabinaCamiones2", empleadoCabinaCamion2, vehiculoCabinaCamion2);
+        this.cabinaCamiones3 = new CabinaAutomatica("CabinaCamiones3", vehiculoCabinaCamion3);
+        this.cabinaCamiones4 = new CabinaAutomatica("CabinaCamiones4", vehiculoCabinaCamion4);
         // Creamos el Registro
         this.registro = new Registro();
         //Asignamos todos los JTextField para que el cliente pueda revisarlos
@@ -70,8 +70,6 @@ public class Peaje{
         this.empleadoCabinaCamion2 = empleadoCabinaCamion2;
         //JTextField de la cola de espera
         this.colaEsperaPeaje = colaEntrada;
-        //Asignacion del Log
-        this.log = log;
     }
     //Método para entrar al peaje
     public void entraPeajeVehiculo(Vehiculo vehiculo) {

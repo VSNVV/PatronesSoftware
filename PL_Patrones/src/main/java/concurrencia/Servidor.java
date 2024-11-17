@@ -40,8 +40,7 @@ public class Servidor extends javax.swing.JFrame {
                 getjTextFieldVehiculoCabinaCoche6(),
                 getjTextFieldEmpleadoCabinaCamiones1(), getjTextFieldVehiculoCabinaCamiones1(),
                 getjTextFieldEmpleadoCabinaCamiones2(), getjTextFieldVehiculoCabinaCamiones2(),
-                getjTextFieldVehiculoCabinaCamiones3(), getjTextFieldVehiculoCabinaCamiones4(),
-                getArchivoLog());
+                getjTextFieldVehiculoCabinaCamiones3(), getjTextFieldVehiculoCabinaCamiones4());
         //Creamos a los empleados
         for(int i = 0; i < 5; i++){
             Empleado empleado = new Empleado(getPeaje(), "Empleado", i, getPaso());

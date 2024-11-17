@@ -18,16 +18,15 @@ public class CabinaManual extends Cabina{
     private Vehiculo vehiculoParaCobrar = null;
     private ListaThreads listaEmpleado;
     private ListaThreads listaVehiculo;
-    private Log log;
+    private Log log = Log.getInstancia();
 
     //Métodos de la clase CabinaManual
 
     //Método constructor
-    public CabinaManual(String _nombre, JTextField _jTextFieldEmpleado, JTextField _jTextFieldVehiculo, Log _log) {
+    public CabinaManual(String _nombre, JTextField _jTextFieldEmpleado, JTextField _jTextFieldVehiculo) {
         super(_nombre);
         this.listaEmpleado = new ListaThreads(_jTextFieldEmpleado);
         this.listaVehiculo = new ListaThreads(_jTextFieldVehiculo);
-        this.log = _log;
     }
     //Método para que el empleado entre a la cabina
     public void entraEmpleado(Empleado empleado){
