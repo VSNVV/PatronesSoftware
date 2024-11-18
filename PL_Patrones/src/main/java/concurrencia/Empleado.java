@@ -1,5 +1,7 @@
 package concurrencia;
 
+import FactoryMethod.CabinaManual;
+
 public class Empleado extends Thread{
     //Atributos de la clase empleado
     private int peajesCobrados = 0;

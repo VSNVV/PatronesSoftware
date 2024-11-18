@@ -1,12 +1,15 @@
-package concurrencia;
+package FactoryMethod;
 
 import Singleton.Log;
+import concurrencia.Cabina;
+import concurrencia.ListaThreads;
+import concurrencia.Vehiculo;
 
 import javax.swing.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class CabinaAutomatica extends Cabina{
+public class CabinaAutomatica extends Cabina {
     //Atributos de la clase cabina
     private boolean abierto = true;
     private ListaThreads listaVehiculo;

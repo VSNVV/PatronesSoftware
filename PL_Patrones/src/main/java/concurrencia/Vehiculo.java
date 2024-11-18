@@ -1,5 +1,8 @@
 package concurrencia;
 
+import FactoryMethod.CabinaAutomatica;
+import FactoryMethod.CabinaManual;
+
 public class Vehiculo extends Thread{
     //Atributos de la clase vehiculo
     private String identificador = "";

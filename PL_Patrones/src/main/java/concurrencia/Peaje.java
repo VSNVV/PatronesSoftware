@@ -1,5 +1,8 @@
 package concurrencia;
 
+import FactoryMethod.CabinaAutomatica;
+import FactoryMethod.CabinaManual;
+import FactoryMethod.FactoriaDeCabinas;
 import Singleton.Log;
 
 import javax.swing.*;
@@ -20,6 +23,8 @@ public class Peaje{
     private Condition ambulanciaEspera = colaEspera.newCondition();
     private ListaThreads listaEsperaPeaje;
     private Log log = Log.getInstancia(); // Uso del patron Singleton
+
+    private final FactoriaDeCabinas factoria = new FactoriaDeCabinas();
     private JTextField colaEsperaPeaje;
     private JTextField vehiculoCabinaCoche1, vehiculoCabinaCoche2, vehiculoCabinaCoche3, vehiculoCabinaCoche4, vehiculoCabinaCoche5, vehiculoCabinaCoche6, vehiculoCabinaCamion1, vehiculoCabinaCamion2, vehiculoCabinaCamion3, vehiculoCabinaCamion4;
     private JTextField empleadoCabinaCoche1, empleadoCabinaCoche2, empleadoCabinaCoche3, empleadoCabinaCamion1, empleadoCabinaCamion2;
@@ -38,16 +43,16 @@ public class Peaje{
                  JTextField vehiculoCabinaCamion3, JTextField vehiculoCabinaCamion4){
         //Creamos todas las cabinas
         this.listaEsperaPeaje = new ListaThreads(colaEntrada);
-        this.cabinaCoches1 = new CabinaManual("CabinaCohes1", empleadoCabinaCoche1, vehiculoCabinaCoche1);
-        this.cabinaCoches2 = new CabinaManual("CabinaCoches2", empleadoCabinaCoche2, vehiculoCabinaCoche2);
-        this.cabinaCoches3 = new CabinaManual("CabinaCoches3", empleadoCabinaCoche3, vehiculoCabinaCoche3);
-        this.cabinaCoches4 = new CabinaAutomatica("CabinaCoches4", vehiculoCabinaCoche4);
-        this.cabinaCoches5 = new CabinaAutomatica("CabinaCoches5", vehiculoCabinaCoche5);
-        this.cabinaCoches6 = new CabinaAutomatica("CabinaCoches6", vehiculoCabinaCoche6);
-        this.cabinaCamiones1 = new CabinaManual("CabinaCamiones1", empleadoCabinaCamion1, vehiculoCabinaCamion1);
-        this.cabinaCamiones2 = new CabinaManual("CabinaCamiones2", empleadoCabinaCamion2, vehiculoCabinaCamion2);
-        this.cabinaCamiones3 = new CabinaAutomatica("CabinaCamiones3", vehiculoCabinaCamion3);
-        this.cabinaCamiones4 = new CabinaAutomatica("CabinaCamiones4", vehiculoCabinaCamion4);
+        this.cabinaCoches1 = (CabinaManual) factoria.getCabina(1, "CabinaCoches1", empleadoCabinaCoche1, vehiculoCabinaCoche1);
+        this.cabinaCoches2 = (CabinaManual) factoria.getCabina(1, "CabinaCoches2", empleadoCabinaCoche2, vehiculoCabinaCoche2);
+        this.cabinaCoches3 = (CabinaManual) factoria.getCabina(1, "CabinaCoches3", empleadoCabinaCoche3, vehiculoCabinaCoche3);
+        this.cabinaCoches4 = (CabinaAutomatica) factoria.getCabina(0, "CabinaCoches4", vehiculoCabinaCoche4, null);
+        this.cabinaCoches5 = (CabinaAutomatica) factoria.getCabina(0, "CabinaCoches5", vehiculoCabinaCoche5, null);
+        this.cabinaCoches6 = (CabinaAutomatica) factoria.getCabina(0, "CabinaCoches6", vehiculoCabinaCoche6, null);
+        this.cabinaCamiones1 = (CabinaManual) factoria.getCabina(1, "CabinaCamiones1", empleadoCabinaCamion1, vehiculoCabinaCamion1);
+        this.cabinaCamiones2 = (CabinaManual) factoria.getCabina(1, "CabinaCamiones2", empleadoCabinaCamion2, vehiculoCabinaCamion2);
+        this.cabinaCamiones3 = (CabinaAutomatica) factoria.getCabina(0, "CabinaCamiones3", vehiculoCabinaCamion3, null);
+        this.cabinaCamiones4 = (CabinaAutomatica) factoria.getCabina(0, "CabinaCamiones4", vehiculoCabinaCamion4, null);
         // Creamos el Registro
         this.registro = new Registro();
         //Asignamos todos los JTextField para que el cliente pueda revisarlos
@@ -105,7 +110,7 @@ public class Peaje{
                 }
             }
             else{
-                //Se veriufica que el vehiculo que quiere entrar es un camion
+                //Se verifica que el vehiculo que quiere entrar es un camion
                 //Comprobaremos si hay una cabina libre para camiones, y si no, haremos cola
                 if(!cabinaCamionDisponible()){
                     //El camión tendrá que esperar ya que no hay ninguna cabina disponible
