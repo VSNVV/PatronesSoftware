@@ -1,6 +1,8 @@
 package FactoryMethod;
 
 import Singleton.Log;
+import State.Estado;
+import State.EstadoCabinaAbierta;
 import concurrencia.Cabina;
 import concurrencia.ListaThreads;
 import concurrencia.Vehiculo;
@@ -15,6 +17,7 @@ public class CabinaAutomatica extends Cabina {
     private ListaThreads listaVehiculo;
     private Lock cabinaAutomatica = new ReentrantLock();
     private Log log = Log.getInstancia(); // Uso del patron Singleton
+    private Estado estadoActual = new EstadoCabinaAbierta(); // Uso del patron State
 
     //Métodos de la clase cabina
     public CabinaAutomatica(String _nombre, JTextField jTextFieldVehiculo) {
@@ -73,5 +76,13 @@ public class CabinaAutomatica extends Cabina {
     //Método get del log
     public Log getLog() {
         return log;
+    }
+    // Método de get del estado actual
+    public Estado getEstado(){
+        return this.estadoActual;
+    }
+    // Método set del estado actual
+    public void setEstado(Estado estado){
+        this.estadoActual = estado;
     }
 }
