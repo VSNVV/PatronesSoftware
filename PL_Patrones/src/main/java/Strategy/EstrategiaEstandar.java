@@ -1,5 +1,7 @@
 package Strategy;
 
+import java.text.DecimalFormat;
+
 public class EstrategiaEstandar implements Estrategia{
     // Atributos de la clase EstrategiaEstandar
 
@@ -8,7 +10,7 @@ public class EstrategiaEstandar implements Estrategia{
     // Método para calcular la tarifa
     @Override
     public double calcular(double precio) {
-        // Codificar aqui la estrategia
-        return 0.0;
+        // Se le añade el 21%
+        return (precio * (1.21));
     }
 }

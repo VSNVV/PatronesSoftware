@@ -1,12 +1,15 @@
 package FactoryMethod;
 
 import Singleton.Log;
-import concurrencia.Cabina;
-import concurrencia.Empleado;
-import concurrencia.ListaThreads;
-import concurrencia.Vehiculo;
+import Strategy.Contexto;
+import Strategy.EstrategiaEstandar;
+import Strategy.EstrategiaPremium;
+import Strategy.EstrategiaReducida;
+import concurrencia.*;
 
 import javax.swing.*;
+import java.text.DecimalFormat;
+import java.util.Random;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -108,6 +111,41 @@ public class CabinaManual extends Cabina {
             cabinaManual.lock();
             //El empleado tarda entre 6 y 8 segundos
             //Escribimos por pantalla y en el log
+            //Para los coches se cobra 3, camiones 5, ambulancias 0, y depende de una tarifa estandar, premium o reducida
+            double precioBase;
+            double precioFinal = 0;
+            Contexto contexto;
+            Factura factura;
+            if(getVehiculoParaCobrar().getIdentificador().contains("Coche")){
+                precioBase = 3.0;
+            }
+            else if(getVehiculoParaCobrar().getIdentificador().contains("Camion")){
+                precioBase = 5.0;
+            }
+            else{
+                precioBase = 0.0;
+            }
+            Random r = new Random();
+            int eleccionTarifa = r.nextInt(3);
+            switch(eleccionTarifa){
+                case 0:
+                    // Tarfia estandar
+                    contexto = new Contexto(new EstrategiaEstandar(), precioBase);
+                    precioFinal = contexto.ejecutaEstrategia(); // Patron Strategy
+                    break;
+                case 1:
+                    //Tarifa reducida
+                    contexto = new Contexto(new EstrategiaReducida(), precioBase);
+                    precioFinal = contexto.ejecutaEstrategia(); // Patron Strategy
+                    break;
+                case 2:
+                    // Tarifa premium
+                    contexto = new Contexto(new EstrategiaPremium(), precioBase);
+                    precioFinal = contexto.ejecutaEstrategia(); // Patron Strategy
+            }
+            // Una vez que tenemos el precio final, hacemos la factura y se la damos al vehiculo
+            factura = new Factura(getVehiculoParaCobrar().getIdentificador(), precioFinal);
+            getVehiculoParaCobrar().setFactura(factura);
             getLog().escribirEnLog("[" + getNombreCabina() + "]: El empleado " + empleado.getIdentificador() + " esta cobrando al vehiculo " + getVehiculoParaCobrar().getIdentificador());
             System.out.println("[" + getNombreCabina() + "]: El empleado " + empleado.getIdentificador() + " esta cobrando al vehiculo " + getVehiculoParaCobrar().getIdentificador());
             empleado.cobraVehiculo();

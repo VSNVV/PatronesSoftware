@@ -8,6 +8,6 @@ public class EstrategiaReducida implements Estrategia {
     @Override
     public double calcular(double precio) {
         // Implementar el algoritmo para calcular la tarifa reducida
-        return 0.0;
+        return (precio * (1.10));
     }
 }

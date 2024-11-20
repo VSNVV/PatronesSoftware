@@ -11,6 +11,7 @@ public class Vehiculo extends Thread{
     private CabinaManual cabinaManual = null;
     private CabinaAutomatica cabinaAutomatica = null;
     private Paso paso;
+    private Factura factura;
 
     //Métodos de la clase Vehículo
 
@@ -81,5 +82,13 @@ public class Vehiculo extends Thread{
     //Método para acceder al paso
     public Paso getPaso() {
         return paso;
+    }
+
+    public Factura getFactura() {
+        return factura;
+    }
+
+    public void setFactura(Factura factura) {
+        this.factura = factura;
     }
 }

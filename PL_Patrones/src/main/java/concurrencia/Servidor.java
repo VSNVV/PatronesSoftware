@@ -148,6 +148,8 @@ public class Servidor extends javax.swing.JFrame {
         labelIdVehiculo = new javax.swing.JLabel();
         botonBuscarVehiculo = new javax.swing.JButton();
         tfIdVehiculoResultado = new javax.swing.JTextField();
+        tfPrecioFactura = new javax.swing.JTextField();
+        labelFactura = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -350,6 +352,10 @@ public class Servidor extends javax.swing.JFrame {
         });
         panelBuscar.add(botonBuscarVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 80, 30));
         panelBuscar.add(tfIdVehiculoResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 80, 30));
+        panelBuscar.add(tfPrecioFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 90, 30));
+
+        labelFactura.setText("Factura");
+        panelBuscar.add(labelFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, -1, -1));
 
         JPanelPrincipal.add(panelBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 670, 590, 80));
 
@@ -384,27 +390,37 @@ public class Servidor extends javax.swing.JFrame {
 
     private void botonBuscarVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonBuscarVehiculoActionPerformed
         // TODO add your handling code here:
-        boolean encontrado = false;
+        boolean vehiculoEncontrado = false;
+        boolean facturaEncontrada = false;
+        double precioFactura = 0.0;
         // Creamos el agregado de vehiculos
-        Agregado agregado = new AgregadoVehiculos(getPeaje().getRegistro().getListaVehiculos());
+        Agregado agregadoVehiculo = new AgregadoVehiculos(getPeaje().getRegistro().getListaVehiculos());
         // Creamos el iterador
-        Iterador iterador = agregado.crearIterador();
+        Iterador iteradorVehiculo = agregadoVehiculo.crearIterador();
         // Ahora leemos el Id que ha introducido el usuario
         String target = getTfIdVehiculo().getText();
         // Ahora, vamos a recorrer el iterador en busca de ese identificador de vehiculo
-        while(iterador.hayMas()){
-            String id = (String) iterador.siguiente();
+        while(iteradorVehiculo.hayMas()){
+            String id = (String) iteradorVehiculo.siguiente();
             if(id.equals(target)){
                 // Imprimimos el resultado en el TextField de resultado
-                encontrado = true;
+                vehiculoEncontrado = true;
+                for(int i = 0; i < getPeaje().getRegistro().getListaFacturas().size(); i++){
+                    Factura facturaActual = getPeaje().getRegistro().getListaFacturas().get(i);
+                    if(facturaActual.getIdVehiculo().equals(target)){
+                        precioFactura = facturaActual.getPrecio();
+                    }
+                }
             }
         }
         // Comprobamos el booleano
-        if(encontrado){
+        if(vehiculoEncontrado){
             getTfIdVehiculoResultado().setBackground(Color.green);
+            getTfPrecioFactura().setText(String.format("%.2f", precioFactura));
         }
         else{
             getTfIdVehiculoResultado().setBackground(Color.red);
+            getTfPrecioFactura().setText("N/A");
         }
     }//GEN-LAST:event_botonBuscarVehiculoActionPerformed
 
@@ -480,6 +496,7 @@ public class Servidor extends javax.swing.JFrame {
     private javax.swing.JLabel labelEmpleadoCabinaCoche1;
     private javax.swing.JLabel labelEmpleadoCabinaCoche2;
     private javax.swing.JLabel labelEmpleadoCabinaCoche3;
+    private javax.swing.JLabel labelFactura;
     private javax.swing.JLabel labelIdVehiculo;
     private javax.swing.JLabel labelVehiculoCabinaCamiones1;
     private javax.swing.JLabel labelVehiculoCabinaCamiones2;
@@ -504,6 +521,7 @@ public class Servidor extends javax.swing.JFrame {
     private javax.swing.JPanel panelCabinaCoches6;
     private javax.swing.JTextField tfIdVehiculo;
     private javax.swing.JTextField tfIdVehiculoResultado;
+    private javax.swing.JTextField tfPrecioFactura;
     // End of variables declaration//GEN-END:variables
 
     //Método get para el JTextFieldEntradaPeaje
@@ -577,6 +595,10 @@ public class Servidor extends javax.swing.JFrame {
 
     public JTextField getTfIdVehiculoResultado(){
         return tfIdVehiculoResultado;
+    }
+
+    public JTextField getTfPrecioFactura(){
+        return tfPrecioFactura;
     }
 
     public Peaje getPeaje(){

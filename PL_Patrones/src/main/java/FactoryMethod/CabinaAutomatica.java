@@ -3,11 +3,17 @@ package FactoryMethod;
 import Singleton.Log;
 import State.Estado;
 import State.EstadoCabinaAbierta;
+import Strategy.Contexto;
+import Strategy.EstrategiaEstandar;
+import Strategy.EstrategiaPremium;
+import Strategy.EstrategiaReducida;
 import concurrencia.Cabina;
+import concurrencia.Factura;
 import concurrencia.ListaThreads;
 import concurrencia.Vehiculo;
 
 import javax.swing.*;
+import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -40,6 +46,40 @@ public class CabinaAutomatica extends Cabina {
     public void vehiculoPaga(Vehiculo vehiculo){
         try{
             cabinaAutomatica.lock();
+            double precioBase;
+            double precioFinal = 0;
+            Contexto contexto;
+            Factura factura;
+            if(vehiculo.getIdentificador().contains("Coche")){
+                precioBase = 3.0;
+            }
+            else if(vehiculo.getIdentificador().contains("Camion")){
+                precioBase = 5.0;
+            }
+            else{
+                precioBase = 0.0;
+            }
+            Random r = new Random();
+            int eleccionTarifa = r.nextInt(3);
+            switch(eleccionTarifa){
+                case 0:
+                    // Tarfia estandar
+                    contexto = new Contexto(new EstrategiaEstandar(), precioBase);
+                    precioFinal = contexto.ejecutaEstrategia(); // Patron Strategy
+                    break;
+                case 1:
+                    //Tarifa reducida
+                    contexto = new Contexto(new EstrategiaReducida(), precioBase);
+                    precioFinal = contexto.ejecutaEstrategia(); // Patron Strategy
+                    break;
+                case 2:
+                    // Tarifa premium
+                    contexto = new Contexto(new EstrategiaPremium(), precioBase);
+                    precioFinal = contexto.ejecutaEstrategia(); // Patron Strategy
+            }
+            // Una vez que tenemos el precio final, hacemos la factura y se la damos al vehiculo
+            factura = new Factura(vehiculo.getIdentificador(), precioFinal);
+            vehiculo.setFactura(factura);
             getLog().escribirEnLog("[" + getNombreCabina() + "]: El vehiculo " + vehiculo.getIdentificador() + " esta pagando su peaje en la cabina " + getNombreCabina());
             System.out.println("[" + getNombreCabina() + "]: El vehiculo " + vehiculo.getIdentificador() + " esta pagando su peaje en la cabina " + getNombreCabina());
             vehiculo.pagaCabinaAutomatica();

@@ -399,7 +399,8 @@ public class Peaje{
                 //no utilizan estas cabinas
             }
             // Ahora, nos apuntamos en la lista de vehiculos que han pasado por el peaje
-            getRegistro().anadir(vehiculo);
+            getRegistro().anadirVehiculo(vehiculo);
+            getRegistro().anadirFactura(vehiculo.getFactura());
             getLog().escribirEnLog("[PEAJE]: El vehiculo " + vehiculo.getIdentificador() + " ha abandonado el peaje");
             System.out.println("[PEAJE]: El vehiculo " + vehiculo.getIdentificador() + " ha abandonado el peaje");
         }finally{
