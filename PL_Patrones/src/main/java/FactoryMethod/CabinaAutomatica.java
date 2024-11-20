@@ -84,5 +84,6 @@ public class CabinaAutomatica extends Cabina {
     // Método set del estado actual
     public void setEstado(Estado estado){
         this.estadoActual = estado;
+        estado.ejecutar(this);
     }
 }

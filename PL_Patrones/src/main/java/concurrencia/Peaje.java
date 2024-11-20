@@ -4,6 +4,8 @@ import FactoryMethod.CabinaAutomatica;
 import FactoryMethod.CabinaManual;
 import FactoryMethod.FactoriaDeCabinas;
 import Singleton.Log;
+import State.EstadoCabinaAbierta;
+import State.EstadoCabinaCerrada;
 
 import javax.swing.*;
 import java.util.concurrent.locks.Condition;
@@ -265,7 +267,7 @@ public class Peaje{
             switch (cabina) {
                 case "Coches4":
                     //Abrimos la cabina
-                    getCabinaCoches4().setAbierto(true);
+                    getCabinaCoches4().setEstado(new EstadoCabinaAbierta()); // Uso del patron State
                     //Despertaremos a un coche de la cola en el caso de que la cabina esté disponible
                     if (getCabinaCoches4().isDisponible()) {
                         //Si hay ambulancias esperando, despertaremos a las ambulancias
@@ -278,7 +280,7 @@ public class Peaje{
                     }
                     break;
                 case "Coches5":
-                    getCabinaCoches5().setAbierto(true);
+                    getCabinaCoches5().setEstado(new EstadoCabinaAbierta());
                     if (getCabinaCoches5().isDisponible()) {
                         if (getAmbulanciasEsperando() > 0) {
                             ambulanciaEspera.signal();
@@ -289,7 +291,7 @@ public class Peaje{
                     }
                     break;
                 case "Coches6":
-                    getCabinaCoches6().setAbierto(true);
+                    getCabinaCoches6().setEstado(new EstadoCabinaAbierta());
                     if (getCabinaCoches6().isDisponible()) {
                         if (getAmbulanciasEsperando() > 0) {
                             ambulanciaEspera.signal();
@@ -300,13 +302,13 @@ public class Peaje{
                     }
                     break;
                 case "Camiones3":
-                    getCabinaCamiones3().setAbierto(true);
+                    getCabinaCamiones3().setEstado(new EstadoCabinaAbierta());
                     if (getCabinaCamiones3().isDisponible()) {
                         camionEspera.signal();
                     }
                     break;
                 case "Camiones4":
-                    getCabinaCamiones4().setAbierto(true);
+                    getCabinaCamiones4().setEstado(new EstadoCabinaAbierta());
                     if (getCabinaCamiones4().isDisponible()) {
                         camionEspera.signal();
                     }
@@ -322,22 +324,23 @@ public class Peaje{
             colaEspera.lock();
             switch (cabina) {
                 case "Coches4":
-                    getCabinaCoches4().setAbierto(false);
+                    getCabinaCoches4().setEstado(new EstadoCabinaCerrada());
                     break;
                 case "Coches5":
-                    getCabinaCoches5().setAbierto(false);
+                    getCabinaCoches5().setEstado(new EstadoCabinaCerrada());
                     break;
                 case "Coches6":
-                    getCabinaCoches6().setAbierto(false);
+                    getCabinaCoches6().setEstado(new EstadoCabinaCerrada());
                     break;
                 case "Camiones3":
-                    getCabinaCamiones3().setAbierto(false);
+                    getCabinaCamiones3().setEstado(new EstadoCabinaCerrada());
                     break;
                 case "Camiones4":
-                    getCabinaCamiones4().setAbierto(false);
+                    getCabinaCamiones4().setEstado(new EstadoCabinaCerrada());
                     break;
             }
-        }finally{
+        }
+        finally{
             colaEspera.unlock();
         }
     }
