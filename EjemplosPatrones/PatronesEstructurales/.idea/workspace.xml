@@ -10,16 +10,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="2p4mzcBi1KsWlu0EF0RaC92O0eS" />
@@ -32,7 +30,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/victorsanavia/Documents/RepositoriosGit/PatronesSoftware/EjemplosPatrones/PatronesComportamiento",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "V:/Programacion/RepositoriosGit/PatronesSoftware/PL_Patrones",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732033988071</updated>
       <workItem from="1732033990144" duration="303000" />
+      <workItem from="1732204283758" duration="2229000" />
     </task>
     <servers />
   </component>
