@@ -5,9 +5,8 @@ import java.util.Random;
 
 public class pruebas{
     public static void main(String[] args){
-        Random r = new Random();
-        int numero = r.nextInt(3);
-        System.out.println(numero);
+        int opcion = (int)(Math.random() * 2 + 1);
+        System.out.println(opcion);
 
     }
 }

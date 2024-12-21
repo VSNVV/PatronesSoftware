@@ -1,5 +1,6 @@
 package concurrencia;
 
+import Flyweight.FactoriaVehiculos;
 import Iterator.Agregado;
 import Iterator.AgregadoVehiculos;
 import Iterator.Iterador;
@@ -18,6 +19,7 @@ public class Servidor extends javax.swing.JFrame {
     private final Peaje peaje;
     private final Log archivoLog;
     private final Paso paso;
+    private final FactoriaVehiculos factoriaVehiculos; // Patron Flyweight
     private boolean botonPulsado = false;
     private int numCoches = 0;
     private int numCamiones = 0;
@@ -41,6 +43,8 @@ public class Servidor extends javax.swing.JFrame {
                 getjTextFieldEmpleadoCabinaCamiones1(), getjTextFieldVehiculoCabinaCamiones1(),
                 getjTextFieldEmpleadoCabinaCamiones2(), getjTextFieldVehiculoCabinaCamiones2(),
                 getjTextFieldVehiculoCabinaCamiones3(), getjTextFieldVehiculoCabinaCamiones4());
+        // Creamos la factoria de vehiculos (patron flyweight)
+        this.factoriaVehiculos = new FactoriaVehiculos(getPeaje(), getPaso());
         //Creamos a los empleados
         for(int i = 0; i < 5; i++){
             Empleado empleado = new Empleado(getPeaje(), "Empleado", i, getPaso());
@@ -50,19 +54,19 @@ public class Servidor extends javax.swing.JFrame {
         for(int i = 0; i < 100; i++){
             //Elegimos el tipo del vehiculo al azar
             opcion = (int)(Math.random() * 2 + 1);
-            switch (opcion){
-                case 1:
+            switch (opcion) {
+                case 1 -> {
                     //El vehículo será un coche
-                    Vehiculo coche = new Vehiculo(getPeaje(), "Coche", getNumCoches(), getPaso());
+                    Vehiculo coche = getFactoriaVehiculos().getVehiculo(opcion, getNumCoches()); // Patron flyweight
                     coche.start();
                     setNumCoches(getNumCoches() + 1);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     //El vehículo será un camión
-                    Vehiculo camion = new Vehiculo(getPeaje(), "Camion", getNumCamiones(), getPaso());
+                    Vehiculo camion = getFactoriaVehiculos().getVehiculo(opcion, getNumCamiones()); // Patron flyweight
                     camion.start();
                     setNumCamiones(getNumCamiones() + 1);
-                    break;
+                }
             }
         }
         //Inicializamos la conexión del RMI
@@ -428,6 +432,7 @@ public class Servidor extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        Servidor servidor = new Servidor();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -454,7 +459,7 @@ public class Servidor extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Servidor().setVisible(true);
+                servidor.setVisible(true);
             }
         });
     }
@@ -607,6 +612,10 @@ public class Servidor extends javax.swing.JFrame {
 
     public Paso getPaso(){
         return paso;
+    }
+
+    public FactoriaVehiculos getFactoriaVehiculos() {
+        return factoriaVehiculos;
     }
 
     public boolean isBotonPulsado() {

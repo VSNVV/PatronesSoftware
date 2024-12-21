@@ -1,266 +1,122 @@
 [ARCHIVO LOG CAMPAMENTO]
 
-[21/11/2024 19:01:54] --> El empleado Empleado3 ha entrado a la cabina CabinaCamiones1
-[21/11/2024 19:01:54] --> [CabinaCoches6]: El vehiculo Coche5 ha entrado a la CabinaCoches6
-[21/11/2024 19:01:54] --> [CabinaCoches5]: El vehiculo Coche4 ha entrado a la CabinaCoches5
-[21/11/2024 19:01:54] --> [CabinaCoches4]: El vehiculo Coche3 ha entrado a la CabinaCoches4
-[21/11/2024 19:01:54] --> El empleado Empleado4 ha entrado a la cabina CabinaCamiones2
-[21/11/2024 19:01:54] --> [CabinaCamiones4]: El vehiculo Camion3 ha entrado a la CabinaCamiones4
-[21/11/2024 19:01:54] --> [CabinaCamiones3]: El vehiculo Camion2 ha entrado a la CabinaCamiones3
-[21/11/2024 19:01:54] --> El empleado Empleado1 ha entrado a la cabina CabinaCoches2
-[21/11/2024 19:01:54] --> El empleado Empleado0 ha entrado a la cabina CabinaCoches1
-[21/11/2024 19:01:54] --> El empleado Empleado2 ha entrado a la cabina CabinaCoches3
-[21/11/2024 19:01:54] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion0
-[21/11/2024 19:01:54] --> [CabinaCoches4]: El vehiculo Coche3 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:01:54] --> [CabinaCoches6]: El vehiculo Coche5 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:01:54] --> [CabinaCoches1]: El empleado Empleado0 esta cobrando al vehiculo Coche0
-[21/11/2024 19:01:54] --> [CabinaCoches3]: El empleado Empleado2 esta cobrando al vehiculo Coche2
-[21/11/2024 19:01:54] --> [CabinaCamiones4]: El vehiculo Camion3 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:01:54] --> [CabinaCoches5]: El vehiculo Coche4 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:01:54] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion1
-[21/11/2024 19:01:54] --> [CabinaCamiones3]: El vehiculo Camion2 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:01:54] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche1
-[21/11/2024 19:01:55] --> El objeto Peaje ha quedado registrado
-[21/11/2024 19:01:59] --> [CabinaCoches6]: El vehiculo Coche5 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:01:59] --> [CabinaCoches4]: El vehiculo Coche3 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:01:59] --> [CabinaCamiones4]: El vehiculo Camion3 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:01:59] --> [CabinaCoches4] El vehiculo Coche3 ha salido de la cabina
-[21/11/2024 19:01:59] --> [CabinaCoches6] El vehiculo Coche5 ha salido de la cabina
-[21/11/2024 19:01:59] --> [PEAJE]: El vehiculo Coche3 ha abandonado el peaje
-[21/11/2024 19:01:59] --> [CabinaCamiones3]: El vehiculo Camion2 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:01:59] --> [CabinaCoches5]: El vehiculo Coche4 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:01:59] --> [CabinaCamiones4] El vehiculo Camion3 ha salido de la cabina
-[21/11/2024 19:01:59] --> [CabinaCoches5] El vehiculo Coche4 ha salido de la cabina
-[21/11/2024 19:01:59] --> [CabinaCoches4]: El vehiculo Coche13 ha entrado a la CabinaCoches4
-[21/11/2024 19:01:59] --> [PEAJE]: El vehiculo Coche5 ha abandonado el peaje
-[21/11/2024 19:01:59] --> [CabinaCamiones3] El vehiculo Camion2 ha salido de la cabina
-[21/11/2024 19:01:59] --> [CabinaCoches6]: El vehiculo Coche14 ha entrado a la CabinaCoches6
-[21/11/2024 19:01:59] --> [PEAJE]: El vehiculo Camion3 ha abandonado el peaje
-[21/11/2024 19:01:59] --> [CabinaCoches4]: El vehiculo Coche13 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:01:59] --> [PEAJE]: El vehiculo Coche4 ha abandonado el peaje
-[21/11/2024 19:01:59] --> [CabinaCoches6]: El vehiculo Coche14 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:01:59] --> [PEAJE]: El vehiculo Camion2 ha abandonado el peaje
-[21/11/2024 19:01:59] --> [CabinaCamiones4]: El vehiculo Camion4 ha entrado a la CabinaCamiones4
-[21/11/2024 19:01:59] --> [CabinaCoches5]: El vehiculo Coche6 ha entrado a la CabinaCoches5
-[21/11/2024 19:01:59] --> [CabinaCamiones3]: El vehiculo Camion5 ha entrado a la CabinaCamiones3
-[21/11/2024 19:01:59] --> [CabinaCamiones4]: El vehiculo Camion4 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:01:59] --> [CabinaCamiones3]: El vehiculo Camion5 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:01:59] --> [CabinaCoches5]: El vehiculo Coche6 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:01] --> [CabinaCoches3]: El empleado Empleado2 ha cobrado al vehiculo Coche2
-[21/11/2024 19:02:01] --> [CabinaCoches3]: El vehiculo Coche2 ha salido de la cabina
-[21/11/2024 19:02:01] --> [PEAJE]: El vehiculo Coche2 ha abandonado el peaje
-[21/11/2024 19:02:01] --> [CabinaCoches3]: El empleado Empleado2 esta cobrando al vehiculo Coche7
-[21/11/2024 19:02:01] --> [CabinaCamiones2]: El empleado Empleado4 ha cobrado al vehiculo Camion1
-[21/11/2024 19:02:01] --> [CabinaCamiones2]: El vehiculo Camion1 ha salido de la cabina
-[21/11/2024 19:02:01] --> [PEAJE]: El vehiculo Camion1 ha abandonado el peaje
-[21/11/2024 19:02:01] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion6
-[21/11/2024 19:02:04] --> [CabinaCamiones1]: El empleado Empleado3 ha cobrado al vehiculo Camion0
-[21/11/2024 19:02:04] --> [CabinaCamiones1]: El vehiculo Camion0 ha salido de la cabina
-[21/11/2024 19:02:04] --> [PEAJE]: El vehiculo Camion0 ha abandonado el peaje
-[21/11/2024 19:02:04] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion7
-[21/11/2024 19:02:04] --> [CabinaCoches4]: El vehiculo Coche13 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:04] --> [CabinaCoches4] El vehiculo Coche13 ha salido de la cabina
-[21/11/2024 19:02:04] --> [PEAJE]: El vehiculo Coche13 ha abandonado el peaje
-[21/11/2024 19:02:04] --> [CabinaCoches6]: El vehiculo Coche14 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:04] --> [CabinaCoches4]: El vehiculo Coche8 ha entrado a la CabinaCoches4
-[21/11/2024 19:02:04] --> [CabinaCoches6] El vehiculo Coche14 ha salido de la cabina
-[21/11/2024 19:02:04] --> [CabinaCoches4]: El vehiculo Coche8 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:04] --> [PEAJE]: El vehiculo Coche14 ha abandonado el peaje
-[21/11/2024 19:02:04] --> [CabinaCamiones3]: El vehiculo Camion5 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:04] --> [CabinaCoches5]: El vehiculo Coche6 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:04] --> [CabinaCamiones3] El vehiculo Camion5 ha salido de la cabina
-[21/11/2024 19:02:04] --> [CabinaCoches6]: El vehiculo Coche9 ha entrado a la CabinaCoches6
-[21/11/2024 19:02:04] --> [PEAJE]: El vehiculo Camion5 ha abandonado el peaje
-[21/11/2024 19:02:04] --> [CabinaCamiones4]: El vehiculo Camion4 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:04] --> [CabinaCoches5] El vehiculo Coche6 ha salido de la cabina
-[21/11/2024 19:02:04] --> [CabinaCamiones4] El vehiculo Camion4 ha salido de la cabina
-[21/11/2024 19:02:04] --> [CabinaCamiones3]: El vehiculo Camion8 ha entrado a la CabinaCamiones3
-[21/11/2024 19:02:04] --> [CabinaCoches6]: El vehiculo Coche9 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:04] --> [CabinaCamiones3]: El vehiculo Camion8 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:04] --> [PEAJE]: El vehiculo Coche6 ha abandonado el peaje
-[21/11/2024 19:02:04] --> [PEAJE]: El vehiculo Camion4 ha abandonado el peaje
-[21/11/2024 19:02:04] --> [CabinaCoches5]: El vehiculo Coche10 ha entrado a la CabinaCoches5
-[21/11/2024 19:02:04] --> [CabinaCamiones4]: El vehiculo Camion9 ha entrado a la CabinaCamiones4
-[21/11/2024 19:02:04] --> [CabinaCoches5]: El vehiculo Coche10 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:04] --> [CabinaCamiones4]: El vehiculo Camion9 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:07] --> [CabinaCoches1]: El empleado Empleado0 ha cobrado al vehiculo Coche0
-[21/11/2024 19:02:07] --> [CabinaCoches1]: El vehiculo Coche0 ha salido de la cabina
-[21/11/2024 19:02:07] --> [PEAJE]: El vehiculo Coche0 ha abandonado el peaje
-[21/11/2024 19:02:07] --> [CabinaCoches1]: El empleado Empleado0 esta cobrando al vehiculo Coche11
-[21/11/2024 19:02:08] --> [CabinaCoches2]: El empleado Empleado1 ha cobrado al vehiculo Coche1
-[21/11/2024 19:02:08] --> [CabinaCoches2]: El vehiculo Coche1 ha salido de la cabina
-[21/11/2024 19:02:08] --> [PEAJE]: El vehiculo Coche1 ha abandonado el peaje
-[21/11/2024 19:02:08] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche34
-[21/11/2024 19:02:09] --> [CabinaCoches4]: El vehiculo Coche8 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:09] --> [CabinaCoches4] El vehiculo Coche8 ha salido de la cabina
-[21/11/2024 19:02:09] --> [PEAJE]: El vehiculo Coche8 ha abandonado el peaje
-[21/11/2024 19:02:09] --> [CabinaCoches4]: El vehiculo Coche36 ha entrado a la CabinaCoches4
-[21/11/2024 19:02:09] --> [CabinaCoches4]: El vehiculo Coche36 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:09] --> [CabinaCoches6]: El vehiculo Coche9 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:09] --> [CabinaCamiones3]: El vehiculo Camion8 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:09] --> [CabinaCoches6] El vehiculo Coche9 ha salido de la cabina
-[21/11/2024 19:02:09] --> [CabinaCamiones3] El vehiculo Camion8 ha salido de la cabina
-[21/11/2024 19:02:09] --> [PEAJE]: El vehiculo Coche9 ha abandonado el peaje
-[21/11/2024 19:02:09] --> [PEAJE]: El vehiculo Camion8 ha abandonado el peaje
-[21/11/2024 19:02:09] --> [CabinaCoches6]: El vehiculo Coche12 ha entrado a la CabinaCoches6
-[21/11/2024 19:02:09] --> [CabinaCoches5]: El vehiculo Coche10 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:09] --> [CabinaCamiones4]: El vehiculo Camion9 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:09] --> [CabinaCoches5] El vehiculo Coche10 ha salido de la cabina
-[21/11/2024 19:02:09] --> [CabinaCamiones3]: El vehiculo Camion10 ha entrado a la CabinaCamiones3
-[21/11/2024 19:02:09] --> [CabinaCoches6]: El vehiculo Coche12 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:09] --> [CabinaCamiones3]: El vehiculo Camion10 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:09] --> [PEAJE]: El vehiculo Coche10 ha abandonado el peaje
-[21/11/2024 19:02:09] --> [CabinaCamiones4] El vehiculo Camion9 ha salido de la cabina
-[21/11/2024 19:02:09] --> [CabinaCoches5]: El vehiculo Coche40 ha entrado a la CabinaCoches5
-[21/11/2024 19:02:09] --> [PEAJE]: El vehiculo Camion9 ha abandonado el peaje
-[21/11/2024 19:02:09] --> [CabinaCoches5]: El vehiculo Coche40 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:09] --> [CabinaCamiones4]: El vehiculo Camion11 ha entrado a la CabinaCamiones4
-[21/11/2024 19:02:09] --> [CabinaCamiones4]: El vehiculo Camion11 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:11] --> [CabinaCamiones1]: El empleado Empleado3 ha cobrado al vehiculo Camion7
-[21/11/2024 19:02:11] --> [CabinaCamiones1]: El vehiculo Camion7 ha salido de la cabina
-[21/11/2024 19:02:11] --> [PEAJE]: El vehiculo Camion7 ha abandonado el peaje
-[21/11/2024 19:02:11] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion13
-[21/11/2024 19:02:13] --> [CabinaCoches3]: El empleado Empleado2 ha cobrado al vehiculo Coche7
-[21/11/2024 19:02:13] --> [CabinaCoches3]: El vehiculo Coche7 ha salido de la cabina
-[21/11/2024 19:02:13] --> [PEAJE]: El vehiculo Coche7 ha abandonado el peaje
-[21/11/2024 19:02:13] --> [CabinaCoches3]: El empleado Empleado2 esta cobrando al vehiculo Coche15
-[21/11/2024 19:02:14] --> [CabinaCoches1]: El empleado Empleado0 ha cobrado al vehiculo Coche11
-[21/11/2024 19:02:14] --> [CabinaCoches1]: El vehiculo Coche11 ha salido de la cabina
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Coche11 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [CabinaCoches1]: El empleado Empleado0 esta cobrando al vehiculo Coche16
-[21/11/2024 19:02:14] --> [CabinaCamiones2]: El empleado Empleado4 ha cobrado al vehiculo Camion6
-[21/11/2024 19:02:14] --> [CabinaCamiones2]: El vehiculo Camion6 ha salido de la cabina
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Camion6 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion12
-[21/11/2024 19:02:14] --> [CabinaCoches4]: El vehiculo Coche36 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:14] --> [CabinaCoches4] El vehiculo Coche36 ha salido de la cabina
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Coche36 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [CabinaCoches4]: El vehiculo Coche17 ha entrado a la CabinaCoches4
-[21/11/2024 19:02:14] --> [CabinaCoches4]: El vehiculo Coche17 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:14] --> [CabinaCoches6]: El vehiculo Coche12 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:14] --> [CabinaCamiones3]: El vehiculo Camion10 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:14] --> [CabinaCoches6] El vehiculo Coche12 ha salido de la cabina
-[21/11/2024 19:02:14] --> [CabinaCamiones3] El vehiculo Camion10 ha salido de la cabina
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Coche12 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Camion10 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [CabinaCoches5]: El vehiculo Coche40 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:14] --> [CabinaCoches6]: El vehiculo Coche19 ha entrado a la CabinaCoches6
-[21/11/2024 19:02:14] --> [CabinaCoches5] El vehiculo Coche40 ha salido de la cabina
-[21/11/2024 19:02:14] --> [CabinaCamiones4]: El vehiculo Camion11 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:14] --> [CabinaCamiones3]: El vehiculo Camion14 ha entrado a la CabinaCamiones3
-[21/11/2024 19:02:14] --> [CabinaCamiones4] El vehiculo Camion11 ha salido de la cabina
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Coche40 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [CabinaCoches6]: El vehiculo Coche19 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:14] --> [CabinaCoches5]: El vehiculo Coche18 ha entrado a la CabinaCoches5
-[21/11/2024 19:02:14] --> [PEAJE]: El vehiculo Camion11 ha abandonado el peaje
-[21/11/2024 19:02:14] --> [CabinaCamiones3]: El vehiculo Camion14 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:14] --> [CabinaCamiones4]: El vehiculo Camion15 ha entrado a la CabinaCamiones4
-[21/11/2024 19:02:14] --> [CabinaCoches5]: El vehiculo Coche18 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:14] --> [CabinaCamiones4]: El vehiculo Camion15 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:19] --> [CabinaCamiones1]: El empleado Empleado3 ha cobrado al vehiculo Camion13
-[21/11/2024 19:02:19] --> [CabinaCamiones1]: El vehiculo Camion13 ha salido de la cabina
-[21/11/2024 19:02:19] --> [PEAJE]: El vehiculo Camion13 ha abandonado el peaje
-[21/11/2024 19:02:19] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion16
-[21/11/2024 19:02:19] --> [CabinaCoches4]: El vehiculo Coche17 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:19] --> [CabinaCoches4] El vehiculo Coche17 ha salido de la cabina
-[21/11/2024 19:02:19] --> [PEAJE]: El vehiculo Coche17 ha abandonado el peaje
-[21/11/2024 19:02:19] --> [CabinaCoches4]: El vehiculo Coche20 ha entrado a la CabinaCoches4
-[21/11/2024 19:02:19] --> [CabinaCoches4]: El vehiculo Coche20 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:19] --> [CabinaCoches6]: El vehiculo Coche19 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:19] --> [CabinaCoches6] El vehiculo Coche19 ha salido de la cabina
-[21/11/2024 19:02:19] --> [PEAJE]: El vehiculo Coche19 ha abandonado el peaje
-[21/11/2024 19:02:19] --> [CabinaCoches6]: El vehiculo Coche21 ha entrado a la CabinaCoches6
-[21/11/2024 19:02:19] --> [CabinaCamiones4]: El vehiculo Camion15 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:19] --> [CabinaCoches6]: El vehiculo Coche21 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:19] --> [CabinaCamiones3]: El vehiculo Camion14 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:19] --> [CabinaCoches5]: El vehiculo Coche18 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:19] --> [CabinaCamiones4] El vehiculo Camion15 ha salido de la cabina
-[21/11/2024 19:02:19] --> [CabinaCoches5] El vehiculo Coche18 ha salido de la cabina
-[21/11/2024 19:02:19] --> [CabinaCamiones3] El vehiculo Camion14 ha salido de la cabina
-[21/11/2024 19:02:19] --> [PEAJE]: El vehiculo Camion15 ha abandonado el peaje
-[21/11/2024 19:02:19] --> [PEAJE]: El vehiculo Coche18 ha abandonado el peaje
-[21/11/2024 19:02:19] --> [CabinaCamiones4]: El vehiculo Camion18 ha entrado a la CabinaCamiones4
-[21/11/2024 19:02:19] --> [PEAJE]: El vehiculo Camion14 ha abandonado el peaje
-[21/11/2024 19:02:19] --> [CabinaCamiones4]: El vehiculo Camion18 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:19] --> [CabinaCoches5]: El vehiculo Coche22 ha entrado a la CabinaCoches5
-[21/11/2024 19:02:19] --> [CabinaCamiones3]: El vehiculo Camion17 ha entrado a la CabinaCamiones3
-[21/11/2024 19:02:19] --> [CabinaCoches5]: El vehiculo Coche22 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:19] --> [CabinaCamiones3]: El vehiculo Camion17 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:20] --> [CabinaCoches2]: El empleado Empleado1 ha cobrado al vehiculo Coche34
-[21/11/2024 19:02:20] --> [CabinaCoches2]: El vehiculo Coche34 ha salido de la cabina
-[21/11/2024 19:02:20] --> [PEAJE]: El vehiculo Coche34 ha abandonado el peaje
-[21/11/2024 19:02:20] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche23
-[21/11/2024 19:02:21] --> [CabinaCamiones2]: El empleado Empleado4 ha cobrado al vehiculo Camion12
-[21/11/2024 19:02:21] --> [CabinaCamiones2]: El vehiculo Camion12 ha salido de la cabina
-[21/11/2024 19:02:21] --> [PEAJE]: El vehiculo Camion12 ha abandonado el peaje
-[21/11/2024 19:02:21] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion19
-[21/11/2024 19:02:24] --> [CabinaCoches4]: El vehiculo Coche20 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:24] --> [CabinaCoches4] El vehiculo Coche20 ha salido de la cabina
-[21/11/2024 19:02:24] --> [PEAJE]: El vehiculo Coche20 ha abandonado el peaje
-[21/11/2024 19:02:24] --> [CabinaCoches4]: El vehiculo Coche24 ha entrado a la CabinaCoches4
-[21/11/2024 19:02:24] --> [CabinaCoches4]: El vehiculo Coche24 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:24] --> [CabinaCoches6]: El vehiculo Coche21 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:24] --> [CabinaCoches6] El vehiculo Coche21 ha salido de la cabina
-[21/11/2024 19:02:24] --> [PEAJE]: El vehiculo Coche21 ha abandonado el peaje
-[21/11/2024 19:02:24] --> [CabinaCoches6]: El vehiculo Coche25 ha entrado a la CabinaCoches6
-[21/11/2024 19:02:24] --> [CabinaCoches6]: El vehiculo Coche25 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:24] --> [CabinaCamiones4]: El vehiculo Camion18 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:24] --> [CabinaCoches5]: El vehiculo Coche22 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:24] --> [CabinaCamiones4] El vehiculo Camion18 ha salido de la cabina
-[21/11/2024 19:02:24] --> [CabinaCoches5] El vehiculo Coche22 ha salido de la cabina
-[21/11/2024 19:02:24] --> [CabinaCamiones3]: El vehiculo Camion17 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:24] --> [PEAJE]: El vehiculo Camion18 ha abandonado el peaje
-[21/11/2024 19:02:24] --> [CabinaCamiones3] El vehiculo Camion17 ha salido de la cabina
-[21/11/2024 19:02:24] --> [CabinaCamiones4]: El vehiculo Camion20 ha entrado a la CabinaCamiones4
-[21/11/2024 19:02:24] --> [PEAJE]: El vehiculo Coche22 ha abandonado el peaje
-[21/11/2024 19:02:24] --> [CabinaCamiones4]: El vehiculo Camion20 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:24] --> [CabinaCoches5]: El vehiculo Coche26 ha entrado a la CabinaCoches5
-[21/11/2024 19:02:24] --> [PEAJE]: El vehiculo Camion17 ha abandonado el peaje
-[21/11/2024 19:02:24] --> [CabinaCoches5]: El vehiculo Coche26 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:24] --> [CabinaCamiones3]: El vehiculo Camion21 ha entrado a la CabinaCamiones3
-[21/11/2024 19:02:24] --> [CabinaCamiones3]: El vehiculo Camion21 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:25] --> [CabinaCoches1]: El empleado Empleado0 ha cobrado al vehiculo Coche16
-[21/11/2024 19:02:25] --> [CabinaCoches1]: El vehiculo Coche16 ha salido de la cabina
-[21/11/2024 19:02:25] --> [PEAJE]: El vehiculo Coche16 ha abandonado el peaje
-[21/11/2024 19:02:25] --> [CabinaCoches1]: El empleado Empleado0 esta cobrando al vehiculo Coche27
-[21/11/2024 19:02:27] --> [CabinaCoches3]: El empleado Empleado2 ha cobrado al vehiculo Coche15
-[21/11/2024 19:02:27] --> [CabinaCoches3]: El vehiculo Coche15 ha salido de la cabina
-[21/11/2024 19:02:27] --> [PEAJE]: El vehiculo Coche15 ha abandonado el peaje
-[21/11/2024 19:02:27] --> [CabinaCoches3]: El empleado Empleado2 esta cobrando al vehiculo Coche28
-[21/11/2024 19:02:29] --> [CabinaCamiones2]: El empleado Empleado4 ha cobrado al vehiculo Camion19
-[21/11/2024 19:02:29] --> [CabinaCamiones2]: El vehiculo Camion19 ha salido de la cabina
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Camion19 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion22
-[21/11/2024 19:02:29] --> [CabinaCamiones1]: El empleado Empleado3 ha cobrado al vehiculo Camion16
-[21/11/2024 19:02:29] --> [CabinaCamiones1]: El vehiculo Camion16 ha salido de la cabina
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Camion16 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion23
-[21/11/2024 19:02:29] --> [CabinaCoches4]: El vehiculo Coche24 ha pagado su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:29] --> [CabinaCoches4] El vehiculo Coche24 ha salido de la cabina
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Coche24 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [CabinaCoches4]: El vehiculo Coche29 ha entrado a la CabinaCoches4
-[21/11/2024 19:02:29] --> [CabinaCoches4]: El vehiculo Coche29 esta pagando su peaje en la cabina CabinaCoches4
-[21/11/2024 19:02:29] --> [CabinaCoches6]: El vehiculo Coche25 ha pagado su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:29] --> [CabinaCoches6] El vehiculo Coche25 ha salido de la cabina
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Coche25 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [CabinaCoches6]: El vehiculo Coche30 ha entrado a la CabinaCoches6
-[21/11/2024 19:02:29] --> [CabinaCoches6]: El vehiculo Coche30 esta pagando su peaje en la cabina CabinaCoches6
-[21/11/2024 19:02:29] --> [CabinaCamiones4]: El vehiculo Camion20 ha pagado su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:29] --> [CabinaCamiones4] El vehiculo Camion20 ha salido de la cabina
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Camion20 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [CabinaCamiones4]: El vehiculo Camion24 ha entrado a la CabinaCamiones4
-[21/11/2024 19:02:29] --> [CabinaCamiones4]: El vehiculo Camion24 esta pagando su peaje en la cabina CabinaCamiones4
-[21/11/2024 19:02:29] --> [CabinaCamiones3]: El vehiculo Camion21 ha pagado su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:29] --> [CabinaCoches5]: El vehiculo Coche26 ha pagado su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:29] --> [CabinaCamiones3] El vehiculo Camion21 ha salido de la cabina
-[21/11/2024 19:02:29] --> [CabinaCoches5] El vehiculo Coche26 ha salido de la cabina
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Camion21 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [PEAJE]: El vehiculo Coche26 ha abandonado el peaje
-[21/11/2024 19:02:29] --> [CabinaCamiones3]: El vehiculo Camion25 ha entrado a la CabinaCamiones3
-[21/11/2024 19:02:29] --> [CabinaCoches5]: El vehiculo Coche31 ha entrado a la CabinaCoches5
-[21/11/2024 19:02:29] --> [CabinaCamiones3]: El vehiculo Camion25 esta pagando su peaje en la cabina CabinaCamiones3
-[21/11/2024 19:02:29] --> [CabinaCoches5]: El vehiculo Coche31 esta pagando su peaje en la cabina CabinaCoches5
-[21/11/2024 19:02:30] --> [CabinaCoches2]: El empleado Empleado1 ha cobrado al vehiculo Coche23
-[21/11/2024 19:02:30] --> [CabinaCoches2]: El vehiculo Coche23 ha salido de la cabina
-[21/11/2024 19:02:30] --> [PEAJE]: El vehiculo Coche23 ha abandonado el peaje
-[21/11/2024 19:02:30] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche32
+[21/12/2024 19:08:36] --> El empleado Empleado1 ha entrado a la cabina CabinaCoches2
+[21/12/2024 19:08:36] --> [CabinaCoches4]: El vehiculo Coche3 ha entrado a la CabinaCoches4
+[21/12/2024 19:08:36] --> [CabinaCoches6]: El vehiculo Coche5 ha entrado a la CabinaCoches6
+[21/12/2024 19:08:36] --> [CabinaCoches5]: El vehiculo Coche4 ha entrado a la CabinaCoches5
+[21/12/2024 19:08:36] --> [CabinaCamiones4]: El vehiculo Camion3 ha entrado a la CabinaCamiones4
+[21/12/2024 19:08:36] --> [CabinaCamiones3]: El vehiculo Camion2 ha entrado a la CabinaCamiones3
+[21/12/2024 19:08:36] --> El empleado Empleado4 ha entrado a la cabina CabinaCamiones2
+[21/12/2024 19:08:36] --> El empleado Empleado3 ha entrado a la cabina CabinaCamiones1
+[21/12/2024 19:08:36] --> El empleado Empleado2 ha entrado a la cabina CabinaCoches3
+[21/12/2024 19:08:36] --> El empleado Empleado0 ha entrado a la cabina CabinaCoches1
+[21/12/2024 19:08:36] --> [CabinaCoches4]: El vehiculo Coche3 esta pagando su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:36] --> [CabinaCoches1]: El empleado Empleado0 esta cobrando al vehiculo Coche0
+[21/12/2024 19:08:36] --> [CabinaCamiones3]: El vehiculo Camion2 esta pagando su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:36] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion0
+[21/12/2024 19:08:36] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion1
+[21/12/2024 19:08:36] --> [CabinaCoches3]: El empleado Empleado2 esta cobrando al vehiculo Coche2
+[21/12/2024 19:08:36] --> [CabinaCamiones4]: El vehiculo Camion3 esta pagando su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:36] --> [CabinaCoches6]: El vehiculo Coche5 esta pagando su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:36] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche1
+[21/12/2024 19:08:36] --> [CabinaCoches5]: El vehiculo Coche4 esta pagando su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:36] --> El objeto Peaje ha quedado registrado
+[21/12/2024 19:08:41] --> [CabinaCamiones3]: El vehiculo Camion2 ha pagado su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:41] --> [CabinaCamiones3] El vehiculo Camion2 ha salido de la cabina
+[21/12/2024 19:08:41] --> [CabinaCamiones4]: El vehiculo Camion3 ha pagado su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:41] --> [PEAJE]: El vehiculo Camion2 ha abandonado el peaje
+[21/12/2024 19:08:41] --> [CabinaCamiones4] El vehiculo Camion3 ha salido de la cabina
+[21/12/2024 19:08:41] --> [PEAJE]: El vehiculo Camion3 ha abandonado el peaje
+[21/12/2024 19:08:41] --> [CabinaCoches6]: El vehiculo Coche5 ha pagado su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:41] --> [CabinaCamiones3]: El vehiculo Camion4 ha entrado a la CabinaCamiones3
+[21/12/2024 19:08:41] --> [CabinaCoches6] El vehiculo Coche5 ha salido de la cabina
+[21/12/2024 19:08:41] --> [CabinaCoches5]: El vehiculo Coche4 ha pagado su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:41] --> [CabinaCamiones3]: El vehiculo Camion4 esta pagando su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:41] --> [CabinaCoches5] El vehiculo Coche4 ha salido de la cabina
+[21/12/2024 19:08:41] --> [PEAJE]: El vehiculo Coche5 ha abandonado el peaje
+[21/12/2024 19:08:41] --> [CabinaCamiones4]: El vehiculo Camion5 ha entrado a la CabinaCamiones4
+[21/12/2024 19:08:41] --> [PEAJE]: El vehiculo Coche4 ha abandonado el peaje
+[21/12/2024 19:08:41] --> [CabinaCamiones4]: El vehiculo Camion5 esta pagando su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:41] --> [CabinaCoches5]: El vehiculo Coche6 ha entrado a la CabinaCoches5
+[21/12/2024 19:08:41] --> [CabinaCoches6]: El vehiculo Coche7 ha entrado a la CabinaCoches6
+[21/12/2024 19:08:41] --> [CabinaCoches5]: El vehiculo Coche6 esta pagando su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:41] --> [CabinaCoches6]: El vehiculo Coche7 esta pagando su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:41] --> [CabinaCoches4]: El vehiculo Coche3 ha pagado su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:41] --> [CabinaCoches4] El vehiculo Coche3 ha salido de la cabina
+[21/12/2024 19:08:41] --> [PEAJE]: El vehiculo Coche3 ha abandonado el peaje
+[21/12/2024 19:08:41] --> [CabinaCoches4]: El vehiculo Coche8 ha entrado a la CabinaCoches4
+[21/12/2024 19:08:41] --> [CabinaCoches4]: El vehiculo Coche8 esta pagando su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:43] --> [CabinaCamiones1]: El empleado Empleado3 ha cobrado al vehiculo Camion0
+[21/12/2024 19:08:43] --> [CabinaCamiones1]: El vehiculo Camion0 ha salido de la cabina
+[21/12/2024 19:08:43] --> [PEAJE]: El vehiculo Camion0 ha abandonado el peaje
+[21/12/2024 19:08:43] --> [CabinaCamiones1]: El empleado Empleado3 esta cobrando al vehiculo Camion6
+[21/12/2024 19:08:46] --> [CabinaCoches3]: El empleado Empleado2 ha cobrado al vehiculo Coche2
+[21/12/2024 19:08:46] --> [CabinaCoches3]: El vehiculo Coche2 ha salido de la cabina
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Coche2 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCoches3]: El empleado Empleado2 esta cobrando al vehiculo Coche9
+[21/12/2024 19:08:46] --> [CabinaCamiones3]: El vehiculo Camion4 ha pagado su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:46] --> [CabinaCamiones3] El vehiculo Camion4 ha salido de la cabina
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Camion4 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCamiones4]: El vehiculo Camion5 ha pagado su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:46] --> [CabinaCamiones3]: El vehiculo Camion7 ha entrado a la CabinaCamiones3
+[21/12/2024 19:08:46] --> [CabinaCoches5]: El vehiculo Coche6 ha pagado su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:46] --> [CabinaCamiones4] El vehiculo Camion5 ha salido de la cabina
+[21/12/2024 19:08:46] --> [CabinaCoches5] El vehiculo Coche6 ha salido de la cabina
+[21/12/2024 19:08:46] --> [CabinaCamiones3]: El vehiculo Camion7 esta pagando su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:46] --> [CabinaCoches6]: El vehiculo Coche7 ha pagado su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Camion5 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCoches6] El vehiculo Coche7 ha salido de la cabina
+[21/12/2024 19:08:46] --> [CabinaCamiones4]: El vehiculo Camion8 ha entrado a la CabinaCamiones4
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Coche6 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCamiones4]: El vehiculo Camion8 esta pagando su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:46] --> [CabinaCoches5]: El vehiculo Coche11 ha entrado a la CabinaCoches5
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Coche7 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCoches5]: El vehiculo Coche11 esta pagando su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:46] --> [CabinaCoches4]: El vehiculo Coche8 ha pagado su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:46] --> [CabinaCoches6]: El vehiculo Coche10 ha entrado a la CabinaCoches6
+[21/12/2024 19:08:46] --> [CabinaCoches4] El vehiculo Coche8 ha salido de la cabina
+[21/12/2024 19:08:46] --> [CabinaCoches6]: El vehiculo Coche10 esta pagando su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Coche8 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCoches4]: El vehiculo Coche14 ha entrado a la CabinaCoches4
+[21/12/2024 19:08:46] --> [CabinaCoches4]: El vehiculo Coche14 esta pagando su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:46] --> [CabinaCoches2]: El empleado Empleado1 ha cobrado al vehiculo Coche1
+[21/12/2024 19:08:46] --> [CabinaCoches2]: El vehiculo Coche1 ha salido de la cabina
+[21/12/2024 19:08:46] --> [PEAJE]: El vehiculo Coche1 ha abandonado el peaje
+[21/12/2024 19:08:46] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche15
+[21/12/2024 19:08:47] --> [CabinaCoches1]: El empleado Empleado0 ha cobrado al vehiculo Coche0
+[21/12/2024 19:08:47] --> [CabinaCoches1]: El vehiculo Coche0 ha salido de la cabina
+[21/12/2024 19:08:47] --> [PEAJE]: El vehiculo Coche0 ha abandonado el peaje
+[21/12/2024 19:08:47] --> [CabinaCoches1]: El empleado Empleado0 esta cobrando al vehiculo Coche12
+[21/12/2024 19:08:49] --> [CabinaCamiones2]: El empleado Empleado4 ha cobrado al vehiculo Camion1
+[21/12/2024 19:08:49] --> [CabinaCamiones2]: El vehiculo Camion1 ha salido de la cabina
+[21/12/2024 19:08:49] --> [PEAJE]: El vehiculo Camion1 ha abandonado el peaje
+[21/12/2024 19:08:49] --> [CabinaCamiones2]: El empleado Empleado4 esta cobrando al vehiculo Camion9
+[21/12/2024 19:08:51] --> [CabinaCamiones3]: El vehiculo Camion7 ha pagado su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:51] --> [CabinaCamiones3] El vehiculo Camion7 ha salido de la cabina
+[21/12/2024 19:08:51] --> [CabinaCamiones4]: El vehiculo Camion8 ha pagado su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:51] --> [PEAJE]: El vehiculo Camion7 ha abandonado el peaje
+[21/12/2024 19:08:51] --> [CabinaCamiones4] El vehiculo Camion8 ha salido de la cabina
+[21/12/2024 19:08:51] --> [CabinaCamiones3]: El vehiculo Camion11 ha entrado a la CabinaCamiones3
+[21/12/2024 19:08:51] --> [CabinaCamiones3]: El vehiculo Camion11 esta pagando su peaje en la cabina CabinaCamiones3
+[21/12/2024 19:08:51] --> [CabinaCoches5]: El vehiculo Coche11 ha pagado su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:51] --> [PEAJE]: El vehiculo Camion8 ha abandonado el peaje
+[21/12/2024 19:08:51] --> [CabinaCoches5] El vehiculo Coche11 ha salido de la cabina
+[21/12/2024 19:08:51] --> [CabinaCoches6]: El vehiculo Coche10 ha pagado su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:51] --> [CabinaCoches6] El vehiculo Coche10 ha salido de la cabina
+[21/12/2024 19:08:51] --> [PEAJE]: El vehiculo Coche11 ha abandonado el peaje
+[21/12/2024 19:08:51] --> [CabinaCamiones4]: El vehiculo Camion10 ha entrado a la CabinaCamiones4
+[21/12/2024 19:08:51] --> [CabinaCoches4]: El vehiculo Coche14 ha pagado su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:51] --> [PEAJE]: El vehiculo Coche10 ha abandonado el peaje
+[21/12/2024 19:08:51] --> [CabinaCoches4] El vehiculo Coche14 ha salido de la cabina
+[21/12/2024 19:08:51] --> [CabinaCamiones4]: El vehiculo Camion10 esta pagando su peaje en la cabina CabinaCamiones4
+[21/12/2024 19:08:51] --> [CabinaCoches6]: El vehiculo Coche16 ha entrado a la CabinaCoches6
+[21/12/2024 19:08:51] --> [PEAJE]: El vehiculo Coche14 ha abandonado el peaje
+[21/12/2024 19:08:51] --> [CabinaCoches5]: El vehiculo Coche13 ha entrado a la CabinaCoches5
+[21/12/2024 19:08:51] --> [CabinaCoches4]: El vehiculo Coche18 ha entrado a la CabinaCoches4
+[21/12/2024 19:08:51] --> [CabinaCoches6]: El vehiculo Coche16 esta pagando su peaje en la cabina CabinaCoches6
+[21/12/2024 19:08:51] --> [CabinaCoches4]: El vehiculo Coche18 esta pagando su peaje en la cabina CabinaCoches4
+[21/12/2024 19:08:51] --> [CabinaCoches5]: El vehiculo Coche13 esta pagando su peaje en la cabina CabinaCoches5
+[21/12/2024 19:08:53] --> [CabinaCoches2]: El empleado Empleado1 ha cobrado al vehiculo Coche15
+[21/12/2024 19:08:53] --> [CabinaCoches2]: El vehiculo Coche15 ha salido de la cabina
+[21/12/2024 19:08:53] --> [PEAJE]: El vehiculo Coche15 ha abandonado el peaje
+[21/12/2024 19:08:53] --> [CabinaCoches2]: El empleado Empleado1 esta cobrando al vehiculo Coche19
