@@ -1,5 +1,6 @@
 package FactoryMethod;
 
+import Adapter.AdaptadorDinero;
 import Facade.FachadaFactura;
 import Singleton.Log;
 import Strategy.Contexto;
@@ -121,6 +122,13 @@ public class CabinaManual extends Cabina {
             precioFinal = contexto.ejecutaEstrategia(); // Patrón Strategy
             factura = fachada.generaFactura(precioFinal);
             getVehiculoParaCobrar().setFactura(factura);
+            // En el caso que el vehiculo sea de inglaterra, el precio debe estar mostrado en libras
+            if(getVehiculoParaCobrar().isBritanico()){
+                AdaptadorDinero conversor = new AdaptadorDinero(factura);
+                double libras = conversor.getPrecio();
+                Factura facturaExtranjera = fachada.generaFactura(libras);
+                getVehiculoParaCobrar().setFactura(facturaExtranjera);
+            }
             getLog().escribirEnLog("[" + getNombreCabina() + "]: El empleado " + empleado.getIdentificador() + " esta cobrando al vehiculo " + getVehiculoParaCobrar().getIdentificador());
             System.out.println("[" + getNombreCabina() + "]: El empleado " + empleado.getIdentificador() + " esta cobrando al vehiculo " + getVehiculoParaCobrar().getIdentificador());
             empleado.cobraVehiculo();

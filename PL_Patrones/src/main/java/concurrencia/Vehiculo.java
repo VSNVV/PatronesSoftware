@@ -3,6 +3,8 @@ package concurrencia;
 import FactoryMethod.CabinaAutomatica;
 import FactoryMethod.CabinaManual;
 
+import java.util.Random;
+
 public class Vehiculo extends Thread{
     //Atributos de la clase vehiculo
     private String identificador = "";
@@ -13,15 +15,19 @@ public class Vehiculo extends Thread{
     private Paso paso;
     private Factura factura;
 
+    private boolean britanico;
+
     //Métodos de la clase Vehículo
 
     //Método constructor
     public Vehiculo(Peaje _peaje, String _tipo, int numero, Paso _paso){
+        Random r = new Random();
         this.peaje = _peaje;
         this.tipo = _tipo;
         this.identificador = _tipo + numero;
         this.paso = _paso;
         super.setName(this.identificador);
+        this.britanico = r.nextBoolean();
     }
     //Método run
     public void run(){
@@ -90,5 +96,9 @@ public class Vehiculo extends Thread{
 
     public void setFactura(Factura factura) {
         this.factura = factura;
+    }
+
+    public boolean isBritanico() {
+        return britanico;
     }
 }
