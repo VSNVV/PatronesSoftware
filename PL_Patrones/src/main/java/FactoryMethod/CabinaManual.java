@@ -107,7 +107,7 @@ public class CabinaManual extends Cabina {
             dormirVehiculo.await();
         }catch(InterruptedException ie){}
     }
-    //Método para que un vehiculo entre a una cabina manual
+    //Método para que el vehiculo pague
     public void cobraVehiculo(Empleado empleado){
         try{
             cabinaManual.lock();

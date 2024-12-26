@@ -40,7 +40,7 @@ public class Log {
     //Metodo para crear el archivo log
     public void crearLog(){
         try {
-            String contenido = "[ARCHIVO LOG CAMPAMENTO]\n\n";
+            String contenido = "[ARCHIVO LOG PEAJE]\n\n";
 
             if(file.exists()){
                 //Si existe lo borramos y creamos uno nuevo al inicio de la ejecucion del programa
