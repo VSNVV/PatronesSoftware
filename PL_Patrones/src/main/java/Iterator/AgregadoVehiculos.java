@@ -1,15 +1,17 @@
 package Iterator;
 
+import concurrencia.Vehiculo;
+
 import java.util.ArrayList;
 
 public class AgregadoVehiculos implements Agregado {
     // Atributos de la clase AgregadoVehiculos
-    private ArrayList<String> listaVehiculos; // Lista de elementos a recorrer
+    private ArrayList<Vehiculo> listaVehiculos; // Lista de elementos a recorrer
 
     // Métodos de la clase AgregadoVehiculos
 
     //Método constructor
-    public AgregadoVehiculos(ArrayList<String> listaVehiclos){
+    public AgregadoVehiculos(ArrayList<Vehiculo> listaVehiclos){
         this.listaVehiculos = listaVehiclos;
     }
 
@@ -20,7 +22,7 @@ public class AgregadoVehiculos implements Agregado {
 
     // Metodos get
 
-    public ArrayList<String> getListaVehiculos() {
+    public ArrayList<Vehiculo> getListaVehiculos() {
         return listaVehiculos;
     }
 }

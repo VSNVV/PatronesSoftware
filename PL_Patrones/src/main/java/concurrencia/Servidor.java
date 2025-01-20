@@ -395,7 +395,7 @@ public class Servidor extends javax.swing.JFrame {
     private void botonBuscarVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonBuscarVehiculoActionPerformed
         // TODO add your handling code here:
         boolean vehiculoEncontrado = false;
-        boolean facturaEncontrada = false;
+        String moneda = "";
         double precioFactura = 0.0;
         // Creamos el agregado de vehiculos
         Agregado agregadoVehiculo = new AgregadoVehiculos(getPeaje().getRegistro().getListaVehiculos());
@@ -405,10 +405,17 @@ public class Servidor extends javax.swing.JFrame {
         String target = getTfIdVehiculo().getText();
         // Ahora, vamos a recorrer el iterador en busca de ese identificador de vehiculo
         while(iteradorVehiculo.hayMas()){
-            String id = (String) iteradorVehiculo.siguiente();
+            Vehiculo vehiculoActual = (Vehiculo) iteradorVehiculo.siguiente();
+            String id = vehiculoActual.getIdentificador();
             if(id.equals(target)){
                 // Imprimimos el resultado en el TextField de resultado
                 vehiculoEncontrado = true;
+                if(vehiculoActual.isBritanico()){
+                    moneda = "£";
+                }
+                else{
+                    moneda = "€";
+                }
                 for(int i = 0; i < getPeaje().getRegistro().getListaFacturas().size(); i++){
                     Factura facturaActual = getPeaje().getRegistro().getListaFacturas().get(i);
                     if(facturaActual.getIdVehiculo().equals(target)){
@@ -420,7 +427,7 @@ public class Servidor extends javax.swing.JFrame {
         // Comprobamos el booleano
         if(vehiculoEncontrado){
             getTfIdVehiculoResultado().setBackground(Color.green);
-            getTfPrecioFactura().setText(String.format("%.2f", precioFactura));
+            getTfPrecioFactura().setText(String.format("%.2f", precioFactura) + moneda);
         }
         else{
             getTfIdVehiculoResultado().setBackground(Color.red);

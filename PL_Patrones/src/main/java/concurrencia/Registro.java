@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Registro {
     // Atributos de la clase Registro
-    private final ArrayList<String> listaVehiculos;
+    private final ArrayList<Vehiculo> listaVehiculos;
     private final ArrayList<Factura> listaFacturas;
 
     // Métodos de la clase Registro
@@ -18,7 +18,7 @@ public class Registro {
     // Método para anadir un vehiculo a la lista
     public void anadirVehiculo(Vehiculo vehiculo){
         // Se anade el vehiculo en la lista una vez adquirido el cerrojo
-        getListaVehiculos().add(vehiculo.getIdentificador());
+        getListaVehiculos().add(vehiculo);
     }
 
     // Método para anadir una factura a la lista
@@ -26,9 +26,14 @@ public class Registro {
         getListaFacturas().add(factura);
     }
 
+    //Método para ver si un vehiculo es britanico o no
+    public void metodo(String idVehiculo){
+
+    }
+
     // Método get y set
 
-    public ArrayList<String> getListaVehiculos() {
+    public ArrayList<Vehiculo> getListaVehiculos() {
         return listaVehiculos;
     }
 
