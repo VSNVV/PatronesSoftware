@@ -26,11 +26,6 @@ public class Registro {
         getListaFacturas().add(factura);
     }
 
-    //Método para ver si un vehiculo es britanico o no
-    public void metodo(String idVehiculo){
-
-    }
-
     // Método get y set
 
     public ArrayList<Vehiculo> getListaVehiculos() {
